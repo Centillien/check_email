@@ -5,7 +5,7 @@ Class to check the existence of an email address with SMTP
 
 Usage is simple, check the test.php
 
-The function check_email() will simulate sending an email using SMTP, but will not actually send one.
+The function check_email($email) will simulate sending an email using SMTP, but will not actually send one.
 
 It's usage is to validate existence to avoid mistyping and spammers, who are known for using non existing email addresses.
 
