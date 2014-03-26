@@ -12,7 +12,7 @@
         $vmail = new verifyEmail();
 
         if ($vmail->check_email($anon_email) == false) {
-                echo "That email address does not seem to exist;
+                echo "That email address does not seem to exist";
         }else{
                 echo "That email does indeed exists";
         }
