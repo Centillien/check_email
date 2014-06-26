@@ -128,7 +128,6 @@ class verifyEmail {
                 //$this->_fsockquery($fp, "VRFY " . $email);
                 $this->_fsockquery($fp, "MAIL FROM: <" . $this->_fromName . '@' . $this->_fromDomain . ">");
                 $code = $this->_fsockquery($fp, "RCPT TO: <" . $user . '@' . $domain . ">");
-                $this->_fsockquery($fp, "RSET");
                 $this->_fsockquery($fp, "QUIT");
                 fclose($fp);
                 if ($code == '250') {
