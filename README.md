@@ -9,13 +9,13 @@ The function check_email($email) will simulate sending an email using SMTP, but 
 
 It's usage is to validate existence to avoid mistyping and spammers, who are known for using non existing email addresses.
 
-I have setup an API service based on this. 
+I have setup an API service based on this. You need to obtain an API key, request one using https://www.centillien.com/contact/
 
 XML
-https://www.centillien.com/services/api/rest/xml/?method=validate_email&email=$email
+https://www.centillien.com/services/api/rest/xml/?method=validate_email&email=$email&api_key=$api_key
 
 or JSON
-https://www.centillien.com/services/api/rest/json/?method=validate_email&email=$email
+https://www.centillien.com/services/api/rest/json/?method=validate_email&email=$email&api_key=$api_key
 
 $email is the actual email to check.
 
